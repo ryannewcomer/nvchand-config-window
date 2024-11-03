@@ -13,13 +13,19 @@ return {
     end,
   },
 
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+  {
+  	"nvim-treesitter/nvim-treesitter",
+  	opts = {
+  		ensure_installed = {
+        "lua", "java", "python"
+  		},
+  	},
+  },
+
+  {
+    "nvim-java/nvim-java",
+    config = function ()
+        require('java').setup()
+    end
+  }
 }
