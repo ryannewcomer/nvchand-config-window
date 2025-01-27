@@ -21,13 +21,6 @@ return {
   		},
   	},
   },
-
-  {
-    "nvim-java/nvim-java",
-    config = function ()
-        require('java').setup()
-    end
-  },
 {
   "folke/noice.nvim",
   event = "VeryLazy",
